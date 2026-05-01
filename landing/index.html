@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith — The Future of Intelligent Design</title>
+  <meta name="description"
+    content="Zenith empowers creators with AI-driven 3D design tools. Build immersive experiences faster than ever before.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Preload Spline scene for faster load -->
+  <link rel="preload" href="https://prod.spline.design/UzAidl0beaPp7VU9/scene.splinecode" as="fetch" crossorigin>
+
+  <!-- Spline Viewer web component -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+
+  <!-- Import map to support bare module specifiers natively in browser -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.9.82/build/runtime.js"
+      }
+    }
+  </script>
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============================================ -->
+  <!-- NAVBAR (floats over the 3D scene)            -->
+  <!-- ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Zenith</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#stats">Impact</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#cta">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost" id="login-btn">Log In</a>
+        <a href="#cta" class="btn btn-primary" id="get-started-btn">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- HERO — Full-screen Spline 3D Scene           -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Fallback (shown while Spline loads or on low-end devices) -->
+    <div class="hero-fallback" id="hero-fallback">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Spline 3D Scene — fills entire viewport -->
+    <div class="spline-container" id="spline-container">
+      <spline-viewer id="spline-viewer" url="https://prod.spline.design/UzAidl0beaPp7VU9/scene.splinecode"
+        events-target="global">
+      </spline-viewer>
+    </div>
+
+    <!-- Bottom gradient fade into next section -->
+    <div class="hero-bottom-fade"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FEATURES SECTION                              -->
+  <!-- ============================================ -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything you need to <span class="text-gradient">create magic</span></h2>
+        <p class="section-subtitle">Powerful tools designed for modern creators. From concept to production in minutes,
+          not months.</p>
+      </div>
+
+      <div class="features-layout">
+        <!-- Left: Feature Cards -->
+        <div class="features-cards">
+          <div class="feature-card feature-card-large" id="feature-ai">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <img src="assets/feature-ai.png" alt="AI Intelligence" loading="lazy">
+            </div>
+            <h3 class="feature-title">AI-Powered Intelligence</h3>
+            <p class="feature-desc">Our neural engine understands your design intent and generates complex 3D scenes
+              from
+              simple text prompts. Iterate at the speed of thought.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">GPT-5 Powered</span>
+              <span class="feature-tag">Auto-Layout</span>
+            </div>
+          </div>
+
+          <div class="feature-card" id="feature-realtime">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <img src="assets/feature-data.png" alt="Real-time Data" loading="lazy">
+            </div>
+            <h3 class="feature-title">Real-Time Collaboration</h3>
+            <p class="feature-desc">Work simultaneously with your team in the same 3D space. See cursors, edits, and
+              changes in real-time with zero latency.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">Multiplayer</span>
+              <span class="feature-tag">WebRTC</span>
+            </div>
+          </div>
+
+          <div class="feature-card" id="feature-security">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <img src="assets/feature-security.png" alt="Enterprise Security" loading="lazy">
+            </div>
+            <h3 class="feature-title">Enterprise Security</h3>
+            <p class="feature-desc">SOC 2 Type II compliant with end-to-end encryption. Your designs and intellectual
+              property are protected at every layer.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">SOC 2</span>
+              <span class="feature-tag">E2EE</span>
+            </div>
+          </div>
+
+          <div class="feature-card" id="feature-export">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-emoji">🚀</div>
+            <h3 class="feature-title">One-Click Deploy</h3>
+            <p class="feature-desc">Export to React, Vue, or vanilla JS with a single click. Optimized bundles with
+              automatic LOD and lazy loading built in.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">React</span>
+              <span class="feature-tag">Vue</span>
+              <span class="feature-tag">WebGL</span>
+            </div>
+          </div>
+
+          <div class="feature-card" id="feature-physics">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-emoji">⚡</div>
+            <h3 class="feature-title">Physics Engine</h3>
+            <p class="feature-desc">Built-in physics simulation with collision detection, gravity, and particle systems.
+              Make your scenes feel alive and responsive.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">Rigid Body</span>
+              <span class="feature-tag">Particles</span>
+            </div>
+          </div>
+
+          <div class="feature-card" id="feature-animation">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-emoji">🎬</div>
+            <h3 class="feature-title">Timeline Animations</h3>
+            <p class="feature-desc">Keyframe-based animation editor with easing curves, scroll-triggered sequences, and
+              state machine logic for interactive experiences.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">Keyframes</span>
+              <span class="feature-tag">Scroll-linked</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive 3D Spline Object -->
+        <div class="features-3d">
+          <canvas id="canvas3d"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- STATS SECTION                                 -->
+  <!-- ============================================ -->
+  <section class="section stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="50000">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-label">Active Creators</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-suffix">M+</span>
+          <span class="stat-label">Scenes Published</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="99">0</span>
+          <span class="stat-suffix">.9%</span>
+          <span class="stat-label">Uptime SLA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-suffix">.9★</span>
+          <span class="stat-label">Avg Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CREATORS SHOWCASE — Spline + Cards            -->
+  <!-- ============================================ -->
+  <section class="section creators-section" id="creators-showcase">
+    <div class="container">
+      <div class="section-header section-header-left">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Loved by <span class="text-gradient">thousands of creators</span></h2>
+        <p class="section-subtitle">See what industry leaders are saying about Zenith.</p>
+      </div>
+
+      <div class="creators-layout">
+        <!-- Left: Spline 3D Canvas -->
+        <div class="creators-3d">
+          <canvas id="canvas3d-creators"></canvas>
+        </div>
+
+        <!-- Right: Empty Cards -->
+        <div class="creators-cards">
+          <div class="creator-card" id="creator-card-1">
+            <div class="creator-card-glow"></div>
+          </div>
+          <div class="creator-card" id="creator-card-2">
+            <div class="creator-card-glow"></div>
+          </div>
+          <div class="creator-card" id="creator-card-3">
+            <div class="creator-card-glow"></div>
+          </div>
+          <div class="creator-card" id="creator-card-4">
+            <div class="creator-card-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- TESTIMONIALS SECTION                          -->
+  <!-- ============================================ -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-grid">
+        <div class="testimonial-card" id="testimonial-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Zenith completely transformed our product demos. We went from static mockups to
+            interactive 3D experiences in a single afternoon. The AI features are genuinely magical."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #3a3a3f, #1a1a1f);">SC</div>
+            <div>
+              <span class="testimonial-name">Sarah Chen</span>
+              <span class="testimonial-role">Head of Design, Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The real-time collaboration is a game-changer. Our distributed team can
+            prototype together as if we're in the same room. And the export quality is production-ready out of the box."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #4a4a50, #2a2a30);">MR</div>
+            <div>
+              <span class="testimonial-name">Marcus Rivera</span>
+              <span class="testimonial-role">CTO, Vercel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"We evaluated every 3D tool on the market. Zenith won on performance, developer
+            experience, and the fact that non-technical teammates can actually use it without training."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #555560, #303038);">EW</div>
+            <div>
+              <span class="testimonial-name">Elena Wu</span>
+              <span class="testimonial-role">VP Engineering, Linear</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CTA SECTION                                   -->
+  <!-- ============================================ -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to build the future?</h2>
+          <p class="cta-subtitle">Join 50,000+ creators already using Zenith. Start for free — no credit card required.
+          </p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-primary btn-large" id="cta-start-btn">
+              Start Free Trial
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="btn btn-glass btn-large" id="cta-demo-btn">
+              Book a Demo
+            </a>
+          </div>
+          <p class="cta-note">Free forever for individuals. Team plans start at $29/mo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                        -->
+  <!-- ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">Zenith</span>
+          </a>
+          <p class="footer-desc">Building the next generation of immersive web experiences with AI-powered 3D design
+            tools.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link" aria-label="Discord">DC</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Tutorials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Zenith. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
