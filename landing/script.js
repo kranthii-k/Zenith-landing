@@ -8,6 +8,10 @@ const canvas = document.getElementById('canvas3d');
 const app = new Application(canvas);
 app.load('https://prod.spline.design/1T2Y38hPPXM8t0eC/scene.splinecode');
 
+const canvasFull = document.getElementById('canvas3d-full');
+const appFull = new Application(canvasFull);
+appFull.load('https://prod.spline.design/sJoFNqFD9cPfOCsH/scene.splinecode');
+
 // ========== SPLINE 3D LOAD HANDLING ==========
 const splineViewer = document.getElementById('spline-viewer');
 const heroFallback = document.getElementById('hero-fallback');
