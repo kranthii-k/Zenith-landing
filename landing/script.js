@@ -1,13 +1,12 @@
 import { Application } from '@splinetool/runtime';
 
+const canvasFeatures = document.getElementById('canvas3d-features');
+const appFeatures = new Application(canvasFeatures);
+appFeatures.load('https://prod.spline.design/kYw5tLgnIxObMlsM/scene.splinecode');
+
 const canvas = document.getElementById('canvas3d');
 const app = new Application(canvas);
-app.load('https://prod.spline.design/kYw5tLgnIxObMlsM/scene.splinecode');
-
-// Creators showcase Spline scene
-const creatorsCanvas = document.getElementById('canvas3d-creators');
-const creatorsApp = new Application(creatorsCanvas);
-creatorsApp.load('https://prod.spline.design/1T2Y38hPPXM8t0eC/scene.splinecode');
+app.load('https://prod.spline.design/1T2Y38hPPXM8t0eC/scene.splinecode');
 
 // ========== SPLINE 3D LOAD HANDLING ==========
 const splineViewer = document.getElementById('spline-viewer');

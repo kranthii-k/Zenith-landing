@@ -25,7 +25,7 @@
   <script type="importmap">
     {
       "imports": {
-        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.9.82/build/runtime.js"
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime/build/runtime.js"
       }
     }
   </script>
@@ -98,91 +98,84 @@
   <section class="section features-section" id="features">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Features</span>
-        <h2 class="section-title">Everything you need to <span class="text-gradient">create magic</span></h2>
-        <p class="section-subtitle">Powerful tools designed for modern creators. From concept to production in minutes,
-          not months.</p>
+        <span class="section-tag">Core Infrastructure</span>
+        <h2 class="section-title">Everything you need to <span class="text-gradient">enforce trust</span></h2>
+        <p class="section-subtitle">A decentralized pipeline built to ensure total transparency, accountability, and real-world impact.</p>
       </div>
 
       <div class="features-layout">
         <!-- Left: Feature Cards -->
         <div class="features-cards">
-          <div class="feature-card feature-card-large" id="feature-ai">
+          <div class="feature-card feature-card-large" id="feature-ccip">
             <div class="feature-card-glow"></div>
-            <div class="feature-icon">
-              <img src="assets/feature-ai.png" alt="Intelligence-Gated Escrow" loading="lazy">
-            </div>
-            <h3 class="feature-title">Intelligence-Gated Escrow</h3>
-            <p class="feature-desc">To solve this, PFTUS uses Milestone-Based Locking. Funds are held in a decentralized smart contract escrow and act as a "digital immune system." Money is only released when absolute cryptographic proof of physical work in the real world is provided.</p>
-            <div class="feature-tags">
-              <span class="feature-tag">Smart Contract</span>
-              <span class="feature-tag">Milestone-Based</span>
-            </div>
-          </div>
-
-          <div class="feature-card" id="feature-realtime">
-            <div class="feature-card-glow"></div>
-            <div class="feature-icon">
-              <img src="assets/feature-data.png" alt="Allocation" loading="lazy">
-            </div>
-            <h3 class="feature-title">Step 1: Allocation</h3>
-            <p class="feature-desc">Donors or government entities deposit funds. The system uses Chainlink CCIP to allow global liquidity, meaning a donor can fund a local project on Polygon using Ethereum from Mainnet without friction.</p>
+            <div class="feature-icon-emoji">🔗</div>
+            <h3 class="feature-title">Cross-Chain Liquidity</h3>
+            <p class="feature-desc">Integrated with Chainlink CCIP to enable seamless global capital flow. Donors can fund local projects across any blockchain without friction.</p>
             <div class="feature-tags">
               <span class="feature-tag">Chainlink CCIP</span>
-              <span class="feature-tag">Global Liquidity</span>
+              <span class="feature-tag">Interoperability</span>
             </div>
           </div>
 
-          <div class="feature-card" id="feature-security">
+          <div class="feature-card" id="feature-ipfs">
             <div class="feature-card-glow"></div>
-            <div class="feature-icon">
-              <img src="assets/feature-security.png" alt="Claim" loading="lazy">
-            </div>
-            <h3 class="feature-title">Step 2: Claim</h3>
-            <p class="feature-desc">The NGO or Contractor finishes a milestone. To request payment, they must upload Geotagged IPFS Imagery as immutable proof of the physical work.</p>
+            <div class="feature-icon-emoji">📸</div>
+            <h3 class="feature-title">Immutable Visual Proof</h3>
+            <p class="feature-desc">Contractors upload Geotagged IPFS Imagery to claim funds. Every photo acts as permanent, tamper-proof evidence of physical work completion.</p>
             <div class="feature-tags">
               <span class="feature-tag">IPFS</span>
-              <span class="feature-tag">Geotagged Imagery</span>
+              <span class="feature-tag">Geotagging</span>
             </div>
           </div>
 
-          <div class="feature-card" id="feature-export">
+          <div class="feature-card" id="feature-oracle">
             <div class="feature-card-glow"></div>
-            <div class="feature-icon-emoji">🚀</div>
-            <h3 class="feature-title">Step 3: AI Scrutiny</h3>
-            <p class="feature-desc">Before a human auditor ever sees the claim, an off-chain AI Oracle (using ML and Grok signals) scans the submission for fraud, price anomalies, or inconsistencies.</p>
+            <div class="feature-icon-emoji">🧠</div>
+            <h3 class="feature-title">AI Oracle Scrutiny</h3>
+            <p class="feature-desc">An off-chain ML Oracle scans submissions for fraud and price anomalies, while analyzing social sentiment via Grok to predict contractor risk.</p>
             <div class="feature-tags">
-              <span class="feature-tag">AI Oracle</span>
               <span class="feature-tag">Machine Learning</span>
+              <span class="feature-tag">Grok API</span>
             </div>
           </div>
 
-          <div class="feature-card" id="feature-physics">
+          <div class="feature-card" id="feature-multisig">
             <div class="feature-card-glow"></div>
-            <div class="feature-icon-emoji">⚡</div>
-            <h3 class="feature-title">Step 4: Dynamic Audit</h3>
-            <p class="feature-desc">If the AI flags the claim as suspicious, the smart contract shifts from one signature to a 2-of-3 Multi-Sig requirement, forcing multiple auditors to verify.</p>
+            <div class="feature-icon-emoji">🛡️</div>
+            <h3 class="feature-title">Dynamic Multi-Sig</h3>
+            <p class="feature-desc">When AI flags a suspicious claim, the smart contract dynamically upgrades its own security from a single signature to a 2-of-3 Multi-Sig audit requirement.</p>
             <div class="feature-tags">
+              <span class="feature-tag">Smart Contracts</span>
               <span class="feature-tag">Multi-Sig</span>
-              <span class="feature-tag">Dynamic Security</span>
             </div>
           </div>
 
-          <div class="feature-card" id="feature-animation">
+          <div class="feature-card" id="feature-nft">
             <div class="feature-card-glow"></div>
-            <div class="feature-icon-emoji">🎬</div>
-            <h3 class="feature-title">Step 5: Reputation & Defense</h3>
-            <p class="feature-desc">The system mints an AuditSeal NFT (Soulbound token) to build the Trust Score. Off-Chain Threat Monitoring can auto-pause funds if an NGO trends for a scandal.</p>
+            <div class="feature-icon-emoji">🏅</div>
+            <h3 class="feature-title">AuditSeal NFTs</h3>
+            <p class="feature-desc">Successful project completions mint a Soulbound Token (AuditSeal) to the contractor's wallet, building an un-erasable, permanent track record of trust.</p>
             <div class="feature-tags">
-              <span class="feature-tag">Soulbound Token</span>
-              <span class="feature-tag">Threat Monitoring</span>
+              <span class="feature-tag">Soulbound Tokens</span>
+              <span class="feature-tag">Reputation</span>
+            </div>
+          </div>
+
+          <div class="feature-card" id="feature-escrow">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-emoji">🔒</div>
+            <h3 class="feature-title">Milestone Escrow</h3>
+            <p class="feature-desc">Funds are never transferred blindly. Capital acts as a digital immune system, locked in escrow until undeniable proof of work unlocks the next milestone.</p>
+            <div class="feature-tags">
+              <span class="feature-tag">Decentralized Escrow</span>
+              <span class="feature-tag">Trustless</span>
             </div>
           </div>
         </div>
 
         <!-- Right: Interactive 3D Spline Object -->
         <div class="features-3d">
-          <canvas id="canvas3d"></canvas>
+          <canvas id="canvas3d-features"></canvas>
         </div>
       </div>
     </div>
@@ -227,46 +220,38 @@
   <section class="section creators-section" id="creators-showcase">
     <div class="container">
       <div class="section-header section-header-left">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">Loved by <span class="text-gradient">thousands of creators</span></h2>
-        <p class="section-subtitle">See what industry leaders are saying about Zenith.</p>
+        <span class="section-tag">System Architecture</span>
+        <h2 class="section-title">Intelligence-Gated <span class="text-gradient">Escrow</span></h2>
+        <p class="section-subtitle">Solving the core problems of fake data, collusion, and irreversible theft.</p>
       </div>
 
       <div class="creators-layout">
         <!-- Left: Spline 3D Canvas -->
         <div class="creators-3d">
-          <canvas id="canvas3d-creators"></canvas>
+          <canvas id="canvas3d"></canvas>
         </div>
 
-        <!-- Right: Empty Cards -->
+        <!-- Right: Cards -->
         <div class="creators-cards">
-          <div class="creator-card" id="creator-card-1">
+          <div class="creator-card" id="creator-card-1" style="padding: 24px;">
             <div class="creator-card-glow"></div>
-            <div style="padding: 24px; position: relative; z-index: 1;">
-              <h3 class="feature-title" style="font-size: 1.05rem;">The Core Problem</h3>
-              <p class="feature-desc" style="font-size: 0.85rem;">Current public fund tracking systems fail because they only track the movement of money, not the truth behind it. Even a basic blockchain is vulnerable.</p>
-            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px;">The Core Problem</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Current systems track money, not truth. They are vulnerable to fake data, human collusion, and irreversible theft since audits happen after funds are spent.</p>
           </div>
-          <div class="creator-card" id="creator-card-2">
+          <div class="creator-card" id="creator-card-2" style="padding: 24px;">
             <div class="creator-card-glow"></div>
-            <div style="padding: 24px; position: relative; z-index: 1;">
-              <h3 class="feature-title" style="font-size: 1.05rem;">Fake Data</h3>
-              <p class="feature-desc" style="font-size: 0.85rem;">If an NGO uploads a fake invoice, the blockchain just permanently records a lie. Immutable false data is still false.</p>
-            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px;">Milestone-Based Locking</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Funds act as a "digital immune system." Money is only released when absolute cryptographic proof of physical work in the real world is provided.</p>
           </div>
-          <div class="creator-card" id="creator-card-3">
+          <div class="creator-card" id="creator-card-3" style="padding: 24px;">
             <div class="creator-card-glow"></div>
-            <div style="padding: 24px; position: relative; z-index: 1;">
-              <h3 class="feature-title" style="font-size: 1.05rem;">Collusion</h3>
-              <p class="feature-desc" style="font-size: 0.85rem;">Relying on a single human auditor creates a single point of failure where bribery and corruption can easily occur.</p>
-            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px;">Multi-Role Ecosystem</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">A strict interaction loop between Donors (financiers), NGOs (executors), and Auditors (verification experts), ensuring total transparency.</p>
           </div>
-          <div class="creator-card" id="creator-card-4">
+          <div class="creator-card" id="creator-card-4" style="padding: 24px;">
             <div class="creator-card-glow"></div>
-            <div style="padding: 24px; position: relative; z-index: 1;">
-              <h3 class="feature-title" style="font-size: 1.05rem;">Irreversible Theft</h3>
-              <p class="feature-desc" style="font-size: 0.85rem;">Audits usually happen after money is spent. Once transferred, stolen funds are gone forever with no way to recover them.</p>
-            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px;">Advanced Defenses</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Off-chain threat monitoring scans external news/socials to pause funds proactively, while Soulbound NFTs build an immutable reputation for contractors.</p>
           </div>
         </div>
       </div>
@@ -274,43 +259,44 @@
   </section>
 
   <!-- ============================================ -->
-  <!-- TESTIMONIALS SECTION                          -->
+  <!-- LIFECYCLE SECTION                             -->
   <!-- ============================================ -->
-  <section class="section testimonials-section" id="testimonials">
+  <section class="section testimonials-section" id="lifecycle">
     <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Workflow</span>
+        <h2 class="section-title">The 5-Step <span class="text-gradient">Fund Lifecycle</span></h2>
+        <p class="section-subtitle">Every transaction goes through a strict, automated pipeline.</p>
+      </div>
       <div class="testimonials-grid">
-        <div class="testimonial-card" id="testimonial-1">
-          <p class="testimonial-quote">"They initiate the cycle by financing specific projects and locking the capital into the smart contract. Their funds are fully protected until verified."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #3a3a3f, #1a1a1f);">DG</div>
-            <div>
-              <span class="testimonial-name">Donors / Government</span>
-              <span class="testimonial-role">Fund Providers</span>
-            </div>
-          </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars" style="color: var(--accent-2); font-weight: bold; letter-spacing: 1px;">Step 1</div>
+          <h3 style="margin-bottom: 12px; font-family: var(--font-display);">Allocation</h3>
+          <p class="testimonial-quote" style="font-style: normal; margin-bottom: 0;">Donors or government entities deposit funds. The system uses Chainlink CCIP to allow global liquidity, routing cross-chain capital seamlessly.</p>
         </div>
 
-        <div class="testimonial-card" id="testimonial-2">
-          <p class="testimonial-quote">"They perform the physical project work (e.g., building a school) and submit the proof of completion back to the system to unlock their payment."
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #4a4a50, #2a2a30);">NO</div>
-            <div>
-              <span class="testimonial-name">NGOs / Execution Orgs</span>
-              <span class="testimonial-role">Project Contractors</span>
-            </div>
-          </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars" style="color: var(--accent-2); font-weight: bold; letter-spacing: 1px;">Step 2</div>
+          <h3 style="margin-bottom: 12px; font-family: var(--font-display);">Claim</h3>
+          <p class="testimonial-quote" style="font-style: normal; margin-bottom: 0;">The NGO finishes a milestone. To request payment, they must upload Geotagged IPFS Imagery as immutable proof of the physical work.</p>
         </div>
 
-        <div class="testimonial-card" id="testimonial-3">
-          <p class="testimonial-quote">"Verification experts (like engineers or certified officials) who review the submitted proofs and authorize the release of funds to the NGOs."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #555560, #303038);">AU</div>
-            <div>
-              <span class="testimonial-name">Auditors</span>
-              <span class="testimonial-role">Verification Experts</span>
-            </div>
-          </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars" style="color: var(--accent-2); font-weight: bold; letter-spacing: 1px;">Step 3</div>
+          <h3 style="margin-bottom: 12px; font-family: var(--font-display);">AI Scrutiny</h3>
+          <p class="testimonial-quote" style="font-style: normal; margin-bottom: 0;">Before humans see the claim, an off-chain AI Oracle scans the submission for fraud, price anomalies, or inconsistencies using ML and Grok signals.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" style="color: var(--accent-2); font-weight: bold; letter-spacing: 1px;">Step 4</div>
+          <h3 style="margin-bottom: 12px; font-family: var(--font-display);">Dynamic Audit</h3>
+          <p class="testimonial-quote" style="font-style: normal; margin-bottom: 0;">If AI flags the claim, the smart contract shifts from 1 signature to a 2-of-3 Multi-Sig requirement, forcing multiple auditors to verify it.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" style="color: var(--accent-2); font-weight: bold; letter-spacing: 1px;">Step 5</div>
+          <h3 style="margin-bottom: 12px; font-family: var(--font-display);">Reputation</h3>
+          <p class="testimonial-quote" style="font-style: normal; margin-bottom: 0;">Once verified, funds are released. The system mints an AuditSeal NFT—a Soulbound token that permanently adds to the contractor's Trust Score.</p>
         </div>
       </div>
     </div>
